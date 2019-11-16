@@ -111,7 +111,7 @@
     </style>
     <body onload="javascript:init();">
         <div class="player_box">
-            <div class="player" v-for="(data, index) in combatant">
+            <div class="player" v-for="(index, data) in combatant">
                 <div class="name">#{{index}} {{getCharName(data)}}</div>
                 <div class="{{changeJobToRole(data)}} {{getIconName(data)}} dps_box">
                     <div class="encdps">{{roundUp(data.encdps)}}</div>
