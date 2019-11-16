@@ -106,6 +106,9 @@
         .ast:after {
         	background-image: url(./job/Ast.png);
         }
+        .ltb:after {
+        	background-image: url(./job/ltb.png);
+        }
         .other1:after {
         }
         .other2:after {
@@ -161,7 +164,7 @@
         <div class="player_box">
             <div class="player" v-for="data in combatant">
                 <div class="name">{{getCharName(data)}}</div>
-                <div class="{{changeJobToRole(data)}} {{data.Job}} dps_box">
+                <div class="{{changeJobToRole(data)}} {{getIconName(data)}} dps_box">
                     <div class="job">{{data.Job}}</div>
                     <div class="encdps">{{data.encdps}}</div>
                 </div>
