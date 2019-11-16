@@ -171,8 +171,8 @@
             <div class="player" v-for="data in combatant">
                 <div class="name">{{getCharName(data)}}</div>
                 <div class="{{changeJobToRole(data)}} {{getIconName(data)}} dps_box">
-                    <div class="encdps">{{data.encdps}}</div>
-                    <div class="enchps">{{data.enchps}}</div>
+                    <div class="encdps">{{roundUp(data.encdps)}}</div>
+                    <div class="enchps">{{roundUp(data.enchps)}}</div>
                 </div>
             </div>
         </div>
