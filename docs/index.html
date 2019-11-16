@@ -11,10 +11,11 @@
             font-family: 'Bebas Neue', 'Meiryo', cursive;
             color: #fff;
             font-size: 12px;
-            text-shadow:1px 1px 0 #000, -1px -1px 0 #000,
-              -1px 1px 0 #000, 1px -1px 0 #000,
-              0px 1px 0 #000,  0-1px 0 #000,
-              -1px 0 0 #000, 1px 0 0 #000;
+            text-shadow: 
+                1px 1px 0 #000, -1px -1px 0 #000,
+                -1px 1px 0 #000, 1px -1px 0 #000,
+                0px 1px 0 #000,  0-1px 0 #000,
+                -1px 0 0 #000, 1px 0 0 #000;
             letter-spacing: 0.15em;
         }
         .player_box {
@@ -38,7 +39,7 @@
             justify-content: space-between;
             align-items: center;
             position: relative;
-            height: 26px;
+            height: 25px;
         }
         .dps_box div {
             margin: 3px 10px 0px 10px;
@@ -47,7 +48,7 @@
         .dps_box:after {
             content: "";
             position: absolute;
-            top: -11px;
+            top: -9px;
             left: calc(50% - 10px);
             width: 20px;
             height: 20px;
@@ -143,6 +144,11 @@
             font-size: 0.7em;
             margin: 0px 0px 0px 3px;
         }
+        .enchps:after {
+            content: "hps";
+            font-size: 0.7em;
+            margin: 0px 0px 0px 3px;
+        }
         .battle_info {
             margin: 5px 0px 0px 0px;
             text-align: center;
@@ -165,8 +171,8 @@
             <div class="player" v-for="data in combatant">
                 <div class="name">{{getCharName(data)}}</div>
                 <div class="{{changeJobToRole(data)}} {{getIconName(data)}} dps_box">
-                    <div class="job">{{data.Job}}</div>
                     <div class="encdps">{{data.encdps}}</div>
+                    <div class="enchps">{{data.enchps}}</div>
                 </div>
             </div>
         </div>
