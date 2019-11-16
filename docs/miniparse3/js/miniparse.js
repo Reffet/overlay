@@ -41,7 +41,8 @@ vueData = new Vue({
 		getNameColor     : getNameColor,
 		getTohitColor    : getTohitColor,
 		getIconName      : jobIcon,
-		getCharName      : getDisplayName
+		getCharName      : getDisplayName,
+		roundUp          : roundUp
 	}
 });
 
