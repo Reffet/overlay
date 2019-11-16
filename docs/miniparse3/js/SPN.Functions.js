@@ -206,6 +206,10 @@ function getDisplayName(charData) {
 	return kanaConverter.convertKanaToOneByte(charData.name);
 }
 
+function roundUp(value) {
+	return Math.round(Number(value))
+}
+
 /**
  * return job icon name.
  */
