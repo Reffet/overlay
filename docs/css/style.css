@@ -106,3 +106,24 @@
     background-repeat: no-repeat;
     box-sizing: border-box;
 }
+.hit_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.hit_box div {
+    font-size: 8px;
+}
+.dh:before {
+    content: "d";
+    margin: 0px 3px 0px 0px;
+}
+.crh:before {
+    content: "cr";
+    margin: 0px 3px 0px 0px;
+}
+.cdh:before {
+    content: "cd";
+    margin: 0px 3px 0px 0px;
+}
