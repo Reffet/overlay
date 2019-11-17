@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+* {
+    font-family: 'Bebas Neue', 'Meiryo', cursive;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 
+        1px 1px 0 #000, -1px -1px 0 #000,
+        -1px 1px 0 #000, 1px -1px 0 #000,
+        0px 1px 0 #000,  0 -1px 0 #000,
+        -1px 0 0 #000, 1px 0 0 #000;
+    letter-spacing: 0.15em;
+}
+.player_box {
+    display: flex;
+    justify-content: center;
+}
+.player {
+    width: 150px;
+    margin: 0px 5px 0px 5px;
+}
+.name {
+    line-height: 2em;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dps_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 25px;
+}
+.dps_box div {
+    margin: 3px 10px 0px 10px;
+    z-index: 1;
+}
+.dps_box:after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    z-index: 0;
+}
+.dps_box:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: skewX(-30deg);
+    z-index: 0;
+}
+.dps:before {
+    background: rgba(248, 50, 50, 0.5);
+}
+.healer:before {
+  background: rgba(60, 101, 41, 0.5);
+}
+.tank:before {
+  background: rgba(46, 48, 141, 0.5);
+}
+.other1:before {
+    background: rgba(255, 135, 55, 0.5);
+}
+.other2:before {
+    background: rgba(255, 135, 55, 0.5);
+}
+.encdps:after {
+    content: "dps";
+    font-size: 0.7em;
+    margin: 0px 0px 0px 3px;
+}
+.enchps:after {
+    content: "hps";
+    font-size: 0.7em;
+    margin: 0px 0px 0px 3px;
+}
+.battle_info {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+}
+.resizeHandle:after {
+    content: "";
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../handle.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
