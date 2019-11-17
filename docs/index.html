@@ -15,6 +15,11 @@
                     <div class="encdps">{{roundUp(data.encdps)}}</div>
                     <div class="enchps">{{roundUp(data.enchps)}}</div>
                 </div>
+                <div class="hit_box">
+                    <div class="dh">{{data.crithitPct}}</div>
+                    <div class="crh">{{data.DirectHitPct}}</div>
+                    <div class="cdh">{{data.CritDirectHitPct}}</div>
+                </div>
             </div>
         </div>
         <div class="battle_info" v-if="encounter != null">{{encounter.title}}({{encounter.duration}}) / Total DPS : {{encounter.ENCDPS}} / Total HPS : {{encounter.ENCHPS}}</div>
