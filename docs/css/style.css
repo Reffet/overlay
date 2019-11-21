@@ -26,9 +26,8 @@
         -1px 0 0 #ff0000, 1px 0 0 #ff0000;
 }
 .name {
-    line-height: 1.8em;
     text-align: center;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
