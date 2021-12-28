@@ -13,8 +13,8 @@ var loop = 0;			// デバッグデータ更新時間（秒）　※デバッグ�
   definition
 --------------------------------------------------------------------------------------------------------*/
 var tankNames = ["Gla", "Pld", "Mrd", "War", "Drk", "Gnb"];
-var dpsNames = ["Pgl", "Mnk", "Lnc", "Drg", "Arc", "Brd", "Rog", "Nin", "Mch", "Acn", "Smn", "Thm", "Blm", "Sam", "Rdm", "Blu", "Dnc"];
-var healerNames = ["Cnj", "Whm", "Sch", "Ast"];
+var dpsNames = ["Pgl", "Mnk", "Lnc", "Drg", "Arc", "Brd", "Rog", "Nin", "Mch", "Acn", "Smn", "Thm", "Blm", "Sam", "Rdm", "Blu", "Dnc", "Rpr"];
+var healerNames = ["Cnj", "Whm", "Sch", "Ast", "Sge"];
 
 var nameAsHealer = "フェアリー";
 
