@@ -274,8 +274,8 @@ var kanaConverter = (function() {
 
 	// mapping double byte to single byte.
 	var g = createKanaMap(
-		'ガギグゲゴザジズゼゾダヂヅデドバビブベボ',
-		'ｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾊﾋﾌﾍﾎ'
+		'ヴガギグゲゴザジズゼゾダヂヅデドバビブベボ',
+		'ｳｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾊﾋﾌﾍﾎ'
 	);
 
 	// mapping double byte to single byte.
