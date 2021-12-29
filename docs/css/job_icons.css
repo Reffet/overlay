@@ -4,6 +4,9 @@
 .drg:after {
 	background-image: url(../job/Drg.png);
 }
+.rpr:after {
+	background-image: url(../job/Rpr.png);
+}
 .mnk:after {
 	background-image: url(../job/Mnk.png);
 }
@@ -48,6 +51,9 @@
 }
 .ast:after {
 	background-image: url(../job/Ast.png);
+}
+.sge:after {
+	background-image: url(../job/Sge.png);
 }
 .ltb:after {
 	background-image: url(../job/Ltb.png);
